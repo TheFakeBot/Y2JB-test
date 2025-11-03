@@ -1018,7 +1018,8 @@ function trigger() {
         
         send_notification(version_string + "\nFW : " + firmwareVersion);
         await log("FW detected : " + firmwareVersion);
-        
+        send_notification("IT WOOOORKS!")
+        await log("Enabling IDU Mode.")
         load_localscript('remotejsloader.js');
         
     } catch (e) {                
